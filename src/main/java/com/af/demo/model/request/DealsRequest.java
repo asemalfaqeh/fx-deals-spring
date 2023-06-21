@@ -13,10 +13,10 @@ public class DealsRequest {
 
     private String dealUniqueId;
     @NotBlank(message = "from currency ISO code is required")
-    @Pattern(regexp = "^[A-Z]{3}$", message = "Invalid currency ISO code")
+    @Pattern(regexp = "^[A-Z]{3}$", message = "Invalid from currency ISO code")
     private String fromCurrency;
     @NotBlank(message = "to currency ISO code is required")
-    @Pattern(regexp = "^[A-Z]{3}$", message = "Invalid currency ISO code")
+    @Pattern(regexp = "^[A-Z]{3}$", message = "Invalid to currency ISO code")
     private String toCurrencyISOCode;
     private Date dealTimestamp;
     @Digits(integer = 9, fraction = 2, message = "Enter Valid Amount Value")

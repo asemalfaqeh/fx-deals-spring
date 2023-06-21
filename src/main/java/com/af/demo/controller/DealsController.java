@@ -25,7 +25,7 @@ import java.util.Set;
 @Controller
 public class DealsController {
     private static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
-    private Set<String> processedRequests = new HashSet<>();
+    private final Set<String> processedRequests = new HashSet<>();
 
     @Autowired
     private DealsService dealsService;
@@ -51,7 +51,6 @@ public class DealsController {
         }
 
         logger.info("[Start Insert Deal]");
-        processedRequests.add(generateId);
 
         try {
 
@@ -59,17 +58,18 @@ public class DealsController {
             BeanUtils.copyProperties(dealsRequest, dealsEntity);
             dealsEntity.setDealUniqueId(generateId);
             dealsEntity.setDealTimestamp(LocalDateTime.now());
+            processedRequests.add(generateId);
             dealsService.saveDeal(dealsEntity);
-            logger.debug("[SuccessSaveDeal]", dealsRequest);
+            logger.debug("[SuccessSaveDeal] " + dealsRequest);
 
             if (bindingResult.hasErrors()) {
                 modelAndView.addObject("errors", bindingResult.getAllErrors());
-                logger.error("[SaveDeal]", bindingResult.getAllErrors());
+                logger.error("[SaveDeal] "+bindingResult.getAllErrors());
             }
 
         }catch (Exception e){
             modelAndView.addObject("errors", bindingResult.getAllErrors());
-            logger.error("[SaveDealException]", e.getMessage());
+            logger.error("[SaveDealException] " + e.getMessage());
         }
 
         modelAndView.setViewName("deals");

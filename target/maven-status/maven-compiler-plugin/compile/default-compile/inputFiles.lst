@@ -1,6 +1,8 @@
-/Users/mac/Desktop/Spring boot Projects/demo/src/main/java/com/af/demo/controller/DealsController.java
-/Users/mac/Desktop/Spring boot Projects/demo/src/main/java/com/af/demo/service/DealsService.java
-/Users/mac/Desktop/Spring boot Projects/demo/src/main/java/com/af/demo/repositories/DealsRepository.java
-/Users/mac/Desktop/Spring boot Projects/demo/src/main/java/com/af/demo/DemoApplication.java
-/Users/mac/Desktop/Spring boot Projects/demo/src/main/java/com/af/demo/entities/DealsEntity.java
-/Users/mac/Desktop/Spring boot Projects/demo/src/main/java/com/af/demo/model/request/DealsRequest.java
+/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/src/main/java/com/af/demo/controller/DealsController.java
+/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/src/main/java/com/af/demo/utils/IGenerateUniqueId.java
+/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/src/main/java/com/af/demo/repositories/DealsRepository.java
+/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/src/main/java/com/af/demo/entities/DealsEntity.java
+/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/src/main/java/com/af/demo/service/DealsService.java
+/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/src/main/java/com/af/demo/DemoApplication.java
+/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/src/main/java/com/af/demo/exception/GeneralExceptionHandler.java
+/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/src/main/java/com/af/demo/model/request/DealsRequest.java

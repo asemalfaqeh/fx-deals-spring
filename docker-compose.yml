@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  myapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    depends_on:
+      - database
+
+  database:
+    image: mysql:8.0.32
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: deals_db
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: 123456
