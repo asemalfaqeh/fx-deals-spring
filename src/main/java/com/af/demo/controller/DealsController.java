@@ -50,6 +50,7 @@ public class DealsController {
             return modelAndView;
         }
 
+        processedRequests.add(generateId);
         logger.info("[Start Insert Deal]");
 
         try {
@@ -58,7 +59,6 @@ public class DealsController {
             BeanUtils.copyProperties(dealsRequest, dealsEntity);
             dealsEntity.setDealUniqueId(generateId);
             dealsEntity.setDealTimestamp(LocalDateTime.now());
-            processedRequests.add(generateId);
             dealsService.saveDeal(dealsEntity);
             logger.debug("[SuccessSaveDeal] " + dealsRequest);
 
