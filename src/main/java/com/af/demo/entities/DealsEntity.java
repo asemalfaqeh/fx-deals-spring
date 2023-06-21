@@ -4,6 +4,7 @@ package com.af.demo.entities;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Date;
 
@@ -13,13 +14,16 @@ public class DealsEntity implements Serializable {
     @Id
     @GeneratedValue
     private Long id;
-
+    @Column(unique = true)
     private String dealUniqueId;
+    @Column(unique = true)
     private String fromCurrency;
+    @Column(unique = true)
     private String toCurrencyISOCode;
+    @Column(unique = true)
     private LocalDateTime dealTimestamp;
-
-    private double dealAmount;
+    @Column(unique = true)
+    private BigDecimal dealAmount;
 
     public DealsEntity(){}
 
@@ -63,11 +67,11 @@ public class DealsEntity implements Serializable {
         this.dealTimestamp = dealTimestamp;
     }
 
-    public double getDealAmount() {
+    public BigDecimal getDealAmount() {
         return dealAmount;
     }
 
-    public void setDealAmount(double dealAmount) {
+    public void setDealAmount(BigDecimal dealAmount) {
         this.dealAmount = dealAmount;
     }
 }

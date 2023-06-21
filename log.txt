@@ -1,0 +1,1029 @@
+2023-06-22 01:25:11.192  INFO 22748 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 22748 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 01:25:11.193  INFO 22748 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 01:25:11.663  INFO 22748 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 01:25:11.663  INFO 22748 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 01:25:11.684  INFO 22748 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 01:25:11.738  INFO 22748 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 01:25:11.758  INFO 22748 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 01:25:11.813  INFO 22748 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 01:25:11.843  INFO 22748 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 01:25:12.014  INFO 22748 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 01:25:12.021  INFO 22748 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 01:25:12.218  INFO 22748 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 01:25:12.435  INFO 22748 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.381 seconds (JVM running for 1.536)
+2023-06-22 01:25:31.440  INFO 22748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 01:25:47.253  INFO 22748 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:25:47.295 ERROR 22748 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [SaveDeal] [Field error in object 'dealsRequest' on field 'fromCurrency': rejected value []; codes [Pattern.dealsRequest.fromCurrency,Pattern.fromCurrency,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [dealsRequest.fromCurrency,fromCurrency]; arguments []; default message [fromCurrency],[Ljavax.validation.constraints.Pattern$Flag;@43922ab4,^[A-Z]{3}$]; default message [Invalid from currency ISO code], Field error in object 'dealsRequest' on field 'dealAmount': rejected value [null]; codes [NotNull.dealsRequest.dealAmount,NotNull.dealAmount,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [dealsRequest.dealAmount,dealAmount]; arguments []; default message [dealAmount]]; default message [Amount is required], Field error in object 'dealsRequest' on field 'fromCurrency': rejected value []; codes [NotBlank.dealsRequest.fromCurrency,NotBlank.fromCurrency,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [dealsRequest.fromCurrency,fromCurrency]; arguments []; default message [fromCurrency]]; default message [from currency ISO code is required], Field error in object 'dealsRequest' on field 'toCurrencyISOCode': rejected value []; codes [NotBlank.dealsRequest.toCurrencyISOCode,NotBlank.toCurrencyISOCode,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [dealsRequest.toCurrencyISOCode,toCurrencyISOCode]; arguments []; default message [toCurrencyISOCode]]; default message [to currency ISO code is required], Field error in object 'dealsRequest' on field 'toCurrencyISOCode': rejected value []; codes [Pattern.dealsRequest.toCurrencyISOCode,Pattern.toCurrencyISOCode,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [dealsRequest.toCurrencyISOCode,toCurrencyISOCode]; arguments []; default message [toCurrencyISOCode],[Ljavax.validation.constraints.Pattern$Flag;@43922ab4,^[A-Z]{3}$]; default message [Invalid to currency ISO code]]
+2023-06-22 01:27:14.727  INFO 22748 --- [http-nio-8080-exec-5] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:27:14.748 ERROR 22748 --- [http-nio-8080-exec-5] com.af.demo.DemoApplication              : [SaveDeal] [Field error in object 'dealsRequest' on field 'toCurrencyISOCode': rejected value []; codes [Pattern.dealsRequest.toCurrencyISOCode,Pattern.toCurrencyISOCode,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [dealsRequest.toCurrencyISOCode,toCurrencyISOCode]; arguments []; default message [toCurrencyISOCode],[Ljavax.validation.constraints.Pattern$Flag;@43922ab4,^[A-Z]{3}$]; default message [Invalid to currency ISO code], Field error in object 'dealsRequest' on field 'dealAmount': rejected value [null]; codes [NotNull.dealsRequest.dealAmount,NotNull.dealAmount,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [dealsRequest.dealAmount,dealAmount]; arguments []; default message [dealAmount]]; default message [Amount is required], Field error in object 'dealsRequest' on field 'fromCurrency': rejected value [9999]; codes [Pattern.dealsRequest.fromCurrency,Pattern.fromCurrency,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [dealsRequest.fromCurrency,fromCurrency]; arguments []; default message [fromCurrency],[Ljavax.validation.constraints.Pattern$Flag;@43922ab4,^[A-Z]{3}$]; default message [Invalid from currency ISO code], Field error in object 'dealsRequest' on field 'toCurrencyISOCode': rejected value []; codes [NotBlank.dealsRequest.toCurrencyISOCode,NotBlank.toCurrencyISOCode,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [dealsRequest.toCurrencyISOCode,toCurrencyISOCode]; arguments []; default message [toCurrencyISOCode]]; default message [to currency ISO code is required]]
+2023-06-22 01:37:12.076  WARN 22748 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s848ms), soft-evicting connections from pool.
+2023-06-22 01:37:51.144  INFO 22748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 01:37:51.145  INFO 22748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 01:37:59.000  INFO 24730 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 24730 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 01:37:59.001  INFO 24730 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 01:37:59.431  INFO 24730 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 01:37:59.431  INFO 24730 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 01:37:59.452  INFO 24730 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 01:37:59.502  INFO 24730 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 01:37:59.518  INFO 24730 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 01:37:59.566  INFO 24730 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 01:37:59.593  INFO 24730 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 01:37:59.727  INFO 24730 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 01:37:59.733  INFO 24730 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 01:37:59.959  INFO 24730 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 01:38:00.178  INFO 24730 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.307 seconds (JVM running for 1.453)
+2023-06-22 01:38:48.022  INFO 24730 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 01:38:59.713  INFO 24730 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:38:59.748 ERROR 24730 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [SaveDeal] [Field error in object 'dealsRequest' on field 'fromCurrency': rejected value [34]; codes [Pattern.dealsRequest.fromCurrency,Pattern.fromCurrency,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [dealsRequest.fromCurrency,fromCurrency]; arguments []; default message [fromCurrency],[Ljavax.validation.constraints.Pattern$Flag;@29bbb123,^[A-Z]{3}$]; default message [Invalid from currency ISO code], Field error in object 'dealsRequest' on field 'toCurrencyISOCode': rejected value [343]; codes [Pattern.dealsRequest.toCurrencyISOCode,Pattern.toCurrencyISOCode,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [dealsRequest.toCurrencyISOCode,toCurrencyISOCode]; arguments []; default message [toCurrencyISOCode],[Ljavax.validation.constraints.Pattern$Flag;@29bbb123,^[A-Z]{3}$]; default message [Invalid to currency ISO code]]
+2023-06-22 01:39:14.188  INFO 24730 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:39:14.202  WARN 24730 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:39:14.203 ERROR 24730 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '0' for key 'UK_t174a7frgikm55oms3efiwjj8'
+2023-06-22 01:39:14.204  INFO 24730 --- [http-nio-8080-exec-3] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:39:14.215 ERROR 24730 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_t174a7frgikm55oms3efiwjj8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:39:42.434  INFO 24730 --- [http-nio-8080-exec-4] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:39:42.447  WARN 24730 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:39:42.447 ERROR 24730 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '0' for key 'UK_t174a7frgikm55oms3efiwjj8'
+2023-06-22 01:39:42.448  INFO 24730 --- [http-nio-8080-exec-4] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:39:42.450 ERROR 24730 --- [http-nio-8080-exec-4] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_t174a7frgikm55oms3efiwjj8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:40:05.733  INFO 24730 --- [http-nio-8080-exec-6] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:40:05.745  WARN 24730 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:40:05.746 ERROR 24730 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '0' for key 'UK_t174a7frgikm55oms3efiwjj8'
+2023-06-22 01:40:05.747  INFO 24730 --- [http-nio-8080-exec-6] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:40:05.749 ERROR 24730 --- [http-nio-8080-exec-6] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_t174a7frgikm55oms3efiwjj8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:40:57.688  INFO 24730 --- [http-nio-8080-exec-7] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:41:13.861  INFO 24730 --- [http-nio-8080-exec-9] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:41:13.872  WARN 24730 --- [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:41:13.873 ERROR 24730 --- [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '0' for key 'UK_t174a7frgikm55oms3efiwjj8'
+2023-06-22 01:41:13.873  INFO 24730 --- [http-nio-8080-exec-9] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:41:13.876 ERROR 24730 --- [http-nio-8080-exec-9] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_t174a7frgikm55oms3efiwjj8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:41:36.091  INFO 24730 --- [http-nio-8080-exec-10] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:41:36.104  WARN 24730 --- [http-nio-8080-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:41:36.105 ERROR 24730 --- [http-nio-8080-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '0' for key 'UK_t174a7frgikm55oms3efiwjj8'
+2023-06-22 01:41:36.106  INFO 24730 --- [http-nio-8080-exec-10] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:41:36.107 ERROR 24730 --- [http-nio-8080-exec-10] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_t174a7frgikm55oms3efiwjj8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:41:57.157  INFO 24730 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:41:57.169  WARN 24730 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:41:57.170 ERROR 24730 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '0' for key 'UK_t174a7frgikm55oms3efiwjj8'
+2023-06-22 01:41:57.170  INFO 24730 --- [http-nio-8080-exec-1] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:41:57.172 ERROR 24730 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_t174a7frgikm55oms3efiwjj8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:42:25.364  INFO 24730 --- [http-nio-8080-exec-4] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:42:25.373  WARN 24730 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:42:25.373 ERROR 24730 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '0' for key 'UK_t174a7frgikm55oms3efiwjj8'
+2023-06-22 01:42:25.373  INFO 24730 --- [http-nio-8080-exec-4] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:42:25.375 ERROR 24730 --- [http-nio-8080-exec-4] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_t174a7frgikm55oms3efiwjj8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:43:10.198  INFO 24730 --- [http-nio-8080-exec-5] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:43:10.217  WARN 24730 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:43:10.218 ERROR 24730 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '0' for key 'UK_t174a7frgikm55oms3efiwjj8'
+2023-06-22 01:43:10.218  INFO 24730 --- [http-nio-8080-exec-5] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:43:10.221 ERROR 24730 --- [http-nio-8080-exec-5] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_t174a7frgikm55oms3efiwjj8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:43:19.318  INFO 24730 --- [http-nio-8080-exec-6] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:43:19.329  WARN 24730 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:43:19.329 ERROR 24730 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '0' for key 'UK_t174a7frgikm55oms3efiwjj8'
+2023-06-22 01:43:19.329  INFO 24730 --- [http-nio-8080-exec-6] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:43:19.331 ERROR 24730 --- [http-nio-8080-exec-6] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_t174a7frgikm55oms3efiwjj8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:44:10.574  INFO 24730 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 01:44:10.578  INFO 24730 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 01:44:17.027  INFO 25700 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 25700 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 01:44:17.027  INFO 25700 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 01:44:17.457  INFO 25700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 01:44:17.457  INFO 25700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 01:44:17.478  INFO 25700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 01:44:17.528  INFO 25700 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 01:44:17.543  INFO 25700 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 01:44:17.590  INFO 25700 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 01:44:17.616  INFO 25700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 01:44:17.751  INFO 25700 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 01:44:17.757  INFO 25700 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 01:44:17.943  INFO 25700 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 01:44:18.153  INFO 25700 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.249 seconds (JVM running for 1.39)
+2023-06-22 01:44:46.064  INFO 25700 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 01:44:53.118  INFO 25700 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:44:53.154  WARN 25700 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:44:53.154 ERROR 25700 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '0' for key 'UK_t174a7frgikm55oms3efiwjj8'
+2023-06-22 01:44:53.154  INFO 25700 --- [http-nio-8080-exec-2] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:44:53.157 ERROR 25700 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_t174a7frgikm55oms3efiwjj8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:45:01.300  INFO 25700 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:45:01.312  WARN 25700 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:45:01.313 ERROR 25700 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '0' for key 'UK_t174a7frgikm55oms3efiwjj8'
+2023-06-22 01:45:01.313  INFO 25700 --- [http-nio-8080-exec-3] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:45:01.314 ERROR 25700 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_t174a7frgikm55oms3efiwjj8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:45:13.338  INFO 25700 --- [http-nio-8080-exec-5] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:45:13.348  WARN 25700 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:45:13.349 ERROR 25700 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '0' for key 'UK_t174a7frgikm55oms3efiwjj8'
+2023-06-22 01:45:13.349  INFO 25700 --- [http-nio-8080-exec-5] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:45:13.351 ERROR 25700 --- [http-nio-8080-exec-5] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_t174a7frgikm55oms3efiwjj8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:45:22.260  INFO 25700 --- [http-nio-8080-exec-6] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:45:22.272  WARN 25700 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:45:22.272 ERROR 25700 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '0' for key 'UK_t174a7frgikm55oms3efiwjj8'
+2023-06-22 01:45:22.272  INFO 25700 --- [http-nio-8080-exec-6] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:45:22.274 ERROR 25700 --- [http-nio-8080-exec-6] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_t174a7frgikm55oms3efiwjj8]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:45:41.128  INFO 25700 --- [http-nio-8080-exec-7] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:47:00.699  INFO 25700 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 01:47:00.712  INFO 25700 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 01:47:43.388  INFO 26226 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 26226 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 01:47:43.389  INFO 26226 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 01:47:43.844  INFO 26226 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 01:47:43.844  INFO 26226 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 01:47:43.865  INFO 26226 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 01:47:43.921  INFO 26226 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 01:47:43.942  INFO 26226 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 01:47:43.994  INFO 26226 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 01:47:44.023  INFO 26226 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 01:47:44.160  INFO 26226 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 01:47:44.167  INFO 26226 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 01:47:44.359  INFO 26226 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 01:47:44.576  INFO 26226 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.317 seconds (JVM running for 1.459)
+2023-06-22 01:48:02.715  INFO 26226 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 01:48:02.753  INFO 26226 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:48:02.788  WARN 26226 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:48:02.789 ERROR 26226 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'KKK' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 01:48:02.789  INFO 26226 --- [http-nio-8080-exec-1] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:48:02.792 ERROR 26226 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_othdt4spc6xqphxbq9tvx9ib4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:48:26.215  INFO 26226 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:48:26.226  WARN 26226 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:48:26.227 ERROR 26226 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_cg6jp5oispb85boewyj2k7e4k'
+2023-06-22 01:48:26.227  INFO 26226 --- [http-nio-8080-exec-2] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:48:26.228 ERROR 26226 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_cg6jp5oispb85boewyj2k7e4k]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 01:50:25.676  INFO 26226 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 01:50:25.682  INFO 26226 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 01:51:53.477  INFO 26880 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 26880 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 01:51:53.477  INFO 26880 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 01:51:53.930  INFO 26880 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 01:51:53.931  INFO 26880 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 01:51:53.951  INFO 26880 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 01:51:54.009  INFO 26880 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 01:51:54.030  INFO 26880 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 01:51:54.083  INFO 26880 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 01:51:54.112  INFO 26880 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 01:51:54.257  INFO 26880 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 01:51:54.264  INFO 26880 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 01:51:54.461  INFO 26880 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 01:51:54.676  INFO 26880 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.325 seconds (JVM running for 1.477)
+2023-06-22 01:52:04.781  INFO 26880 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 01:52:04.819  INFO 26880 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 01:52:04.819  INFO 26880 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:52:04.850  WARN 26880 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:52:04.850 ERROR 26880 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_cg6jp5oispb85boewyj2k7e4k'
+2023-06-22 01:52:04.850  INFO 26880 --- [http-nio-8080-exec-1] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:52:43.897  INFO 26880 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='KKK', toCurrencyISOCode='HHH', dealTimestamp=null, dealAmount=3434}
+2023-06-22 01:52:43.898  INFO 26880 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:52:43.915  WARN 26880 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 01:52:43.915 ERROR 26880 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'KKK' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 01:52:43.916  INFO 26880 --- [http-nio-8080-exec-2] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 01:53:17.701  INFO 26880 --- [http-nio-8080-exec-5] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='EEE', toCurrencyISOCode='KKK', dealTimestamp=null, dealAmount=1234}
+2023-06-22 01:53:17.702  INFO 26880 --- [http-nio-8080-exec-5] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:53:43.360  INFO 26880 --- [http-nio-8080-exec-6] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='QQQ', toCurrencyISOCode='CCC', dealTimestamp=null, dealAmount=2456}
+2023-06-22 01:53:43.361  INFO 26880 --- [http-nio-8080-exec-6] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:58:26.884  INFO 26880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 01:58:26.887  INFO 26880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 01:58:35.335  INFO 27923 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 27923 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 01:58:35.335  INFO 27923 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 01:58:35.766  INFO 27923 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 01:58:35.766  INFO 27923 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 01:58:35.786  INFO 27923 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 01:58:35.833  INFO 27923 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 01:58:35.849  INFO 27923 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 01:58:35.898  INFO 27923 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 01:58:35.925  INFO 27923 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 01:58:36.056  INFO 27923 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 01:58:36.062  INFO 27923 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 01:58:36.248  INFO 27923 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 01:58:36.459  INFO 27923 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.247 seconds (JVM running for 1.393)
+2023-06-22 01:58:45.375  INFO 27923 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 01:58:53.381  INFO 27923 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=3434}
+2023-06-22 01:58:53.381  INFO 27923 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 01:58:53.425 ERROR 27923 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "/": Error resolving template [/], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1405) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1149) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-06-22 01:58:53.426 ERROR 27923 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1405) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1149) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-06-22 01:59:29.602  INFO 27923 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 01:59:29.604  INFO 27923 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 01:59:38.902  INFO 28101 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 28101 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 01:59:38.903  INFO 28101 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 01:59:39.347  INFO 28101 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 01:59:39.347  INFO 28101 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 01:59:39.367  INFO 28101 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 01:59:39.417  INFO 28101 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 01:59:39.434  INFO 28101 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 01:59:39.480  INFO 28101 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 01:59:39.506  INFO 28101 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 01:59:39.643  INFO 28101 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 01:59:39.649  INFO 28101 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 01:59:39.841  INFO 28101 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 01:59:40.055  INFO 28101 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.274 seconds (JVM running for 1.415)
+2023-06-22 01:59:56.978  INFO 28101 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 02:00:03.732  INFO 28101 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=3445}
+2023-06-22 02:00:03.732  INFO 28101 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:00:03.767  WARN 28101 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:00:03.767 ERROR 28101 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:00:03.768  INFO 28101 --- [http-nio-8080-exec-2] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:00:03.775 ERROR 28101 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "deals": An error happened during template parsing (template: "class path resource [templates/deals.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/deals.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1405) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1149) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "error.defaultMessage" (template: "deals" - line 22, col 13)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "error.defaultMessage" (template: "deals" - line 22, col 13)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'defaultMessage' cannot be found on object of type 'java.lang.String' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	... 75 common frames omitted
+
+2023-06-22 02:00:03.776 ERROR 28101 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/deals.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'defaultMessage' cannot be found on object of type 'java.lang.String' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1405) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1149) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-06-22 02:03:13.830  INFO 28101 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 02:03:13.834  INFO 28101 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 02:03:22.694  INFO 28691 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 28691 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 02:03:22.694  INFO 28691 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 02:03:23.195  INFO 28691 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 02:03:23.195  INFO 28691 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 02:03:23.218  INFO 28691 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 02:03:23.276  INFO 28691 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 02:03:23.293  INFO 28691 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 02:03:23.346  INFO 28691 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 02:03:23.378  INFO 28691 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 02:03:23.533  INFO 28691 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 02:03:23.540  INFO 28691 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 02:03:23.749  INFO 28691 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 02:03:23.998  INFO 28691 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.458 seconds (JVM running for 1.634)
+2023-06-22 02:03:28.572  INFO 28691 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 02:03:34.593  INFO 28691 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:03:34.593  INFO 28691 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:03:34.630  WARN 28691 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:03:34.630 ERROR 28691 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:03:34.630  INFO 28691 --- [http-nio-8080-exec-2] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:03:34.638 ERROR 28691 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "deals": An error happened during template parsing (template: "class path resource [templates/deals.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/deals.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1405) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1149) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "error.defaultMessage" (template: "deals" - line 22, col 13)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "error.defaultMessage" (template: "deals" - line 22, col 13)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'defaultMessage' cannot be found on object of type 'java.lang.String' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	... 75 common frames omitted
+
+2023-06-22 02:03:34.638 ERROR 28691 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/deals.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'defaultMessage' cannot be found on object of type 'java.lang.String' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-5.3.25.jar:5.3.25]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1405) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1149) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-06-22 02:04:20.398  INFO 28691 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 02:04:20.402  INFO 28691 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 02:08:14.835  INFO 29449 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 29449 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 02:08:14.835  INFO 29449 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 02:08:15.298  INFO 29449 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 02:08:15.298  INFO 29449 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 02:08:15.319  INFO 29449 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 02:08:15.369  INFO 29449 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 02:08:15.390  INFO 29449 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 02:08:15.446  INFO 29449 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 02:08:15.476  INFO 29449 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 02:08:15.612  INFO 29449 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 02:08:15.619  INFO 29449 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 02:08:15.820  INFO 29449 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 02:08:16.038  INFO 29449 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.33 seconds (JVM running for 1.475)
+2023-06-22 02:08:39.498  INFO 29449 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 02:08:44.306 ERROR 29449 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: No primary or single unique constructor found for class org.springframework.dao.DataIntegrityViolationException] with root cause
+
+java.lang.IllegalStateException: No primary or single unique constructor found for class org.springframework.dao.DataIntegrityViolationException
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:267) ~[spring-beans-5.3.25.jar:5.3.25]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.createAttribute(ModelAttributeMethodProcessor.java:219) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.createAttribute(ServletModelAttributeMethodProcessor.java:85) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:147) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-06-22 02:10:15.412  INFO 29449 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 02:10:15.418  INFO 29449 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 02:10:27.316  INFO 29841 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 29841 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 02:10:27.317  INFO 29841 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 02:10:27.771  INFO 29841 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 02:10:27.771  INFO 29841 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 02:10:27.791  INFO 29841 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 02:10:27.848  INFO 29841 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 02:10:27.869  INFO 29841 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 02:10:27.921  INFO 29841 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 02:10:27.950  INFO 29841 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 02:10:28.100  INFO 29841 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 02:10:28.107  INFO 29841 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 02:10:28.313  INFO 29841 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 02:10:28.529  INFO 29841 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.34 seconds (JVM running for 1.492)
+2023-06-22 02:10:36.335  INFO 29841 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 02:10:41.215  INFO 29841 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:10:41.216  INFO 29841 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:10:41.261  WARN 29841 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:10:41.261 ERROR 29841 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:10:41.261  INFO 29841 --- [http-nio-8080-exec-2] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:10:41.264 ERROR 29841 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_othdt4spc6xqphxbq9tvx9ib4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:10:54.046  INFO 29841 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:10:54.047  INFO 29841 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:10:54.057  WARN 29841 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:10:54.058 ERROR 29841 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:10:54.058  INFO 29841 --- [http-nio-8080-exec-3] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:10:54.059 ERROR 29841 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_othdt4spc6xqphxbq9tvx9ib4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:11:26.534  INFO 29841 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 02:11:26.537  INFO 29841 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 02:11:32.090  INFO 30016 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 30016 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 02:11:32.091  INFO 30016 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 02:11:32.526  INFO 30016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 02:11:32.526  INFO 30016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 02:11:32.546  INFO 30016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 02:11:32.597  INFO 30016 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 02:11:32.613  INFO 30016 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 02:11:32.660  INFO 30016 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 02:11:32.686  INFO 30016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 02:11:32.822  INFO 30016 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 02:11:32.828  INFO 30016 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 02:11:33.011  INFO 30016 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 02:11:33.223  INFO 30016 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.255 seconds (JVM running for 1.402)
+2023-06-22 02:12:38.958  INFO 30016 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 02:12:46.294  INFO 30016 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:12:46.294  INFO 30016 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:12:46.330  WARN 30016 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:12:46.330 ERROR 30016 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:12:46.330  INFO 30016 --- [http-nio-8080-exec-2] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:12:46.333 ERROR 30016 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_othdt4spc6xqphxbq9tvx9ib4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:13:15.456  INFO 30016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 02:13:15.459  INFO 30016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 02:14:01.771  INFO 30467 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 30467 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 02:14:01.771  INFO 30467 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 02:14:02.221  INFO 30467 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 02:14:02.221  INFO 30467 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 02:14:02.240  INFO 30467 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 02:14:02.295  INFO 30467 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 02:14:02.318  INFO 30467 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 02:14:02.374  INFO 30467 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 02:14:02.403  INFO 30467 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 02:14:02.544  INFO 30467 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 02:14:02.552  INFO 30467 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 02:14:02.754  INFO 30467 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 02:14:02.985  INFO 30467 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.336 seconds (JVM running for 1.481)
+2023-06-22 02:14:07.668  INFO 30467 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 02:14:13.887  INFO 30467 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:14:13.887  INFO 30467 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:14:13.926  WARN 30467 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:14:13.926 ERROR 30467 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:14:13.926  INFO 30467 --- [http-nio-8080-exec-2] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:14:13.929 ERROR 30467 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_othdt4spc6xqphxbq9tvx9ib4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:15:34.331  INFO 30467 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 02:15:34.335  INFO 30467 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 02:15:47.622  INFO 30787 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 30787 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 02:15:47.622  INFO 30787 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 02:15:48.075  INFO 30787 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 02:15:48.075  INFO 30787 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 02:15:48.095  INFO 30787 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 02:15:48.144  INFO 30787 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 02:15:48.165  INFO 30787 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 02:15:48.221  INFO 30787 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 02:15:48.250  INFO 30787 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 02:15:48.384  INFO 30787 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 02:15:48.391  INFO 30787 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 02:15:48.590  INFO 30787 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 02:15:48.811  INFO 30787 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.313 seconds (JVM running for 1.46)
+2023-06-22 02:16:03.712  INFO 30787 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 02:16:08.680  INFO 30787 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:16:08.680  INFO 30787 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:16:08.723  WARN 30787 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:16:08.723 ERROR 30787 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:16:08.723  INFO 30787 --- [http-nio-8080-exec-2] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:16:08.726 ERROR 30787 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_othdt4spc6xqphxbq9tvx9ib4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:16:30.469  INFO 30787 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='LLL', dealTimestamp=null, dealAmount=1}
+2023-06-22 02:16:30.470  INFO 30787 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:16:30.487  WARN 30787 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:16:30.487 ERROR 30787 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:16:30.488  INFO 30787 --- [http-nio-8080-exec-3] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:16:30.489 ERROR 30787 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_othdt4spc6xqphxbq9tvx9ib4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:17:04.119  INFO 30787 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 02:17:04.123  INFO 30787 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 02:17:13.067  INFO 31096 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 31096 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 02:17:13.067  INFO 31096 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 02:17:13.498  INFO 31096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 02:17:13.498  INFO 31096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 02:17:13.517  INFO 31096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 02:17:13.567  INFO 31096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 02:17:13.584  INFO 31096 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 02:17:13.629  INFO 31096 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 02:17:13.656  INFO 31096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 02:17:13.791  INFO 31096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 02:17:13.797  INFO 31096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 02:17:13.987  INFO 31096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 02:17:14.214  INFO 31096 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.267 seconds (JVM running for 1.407)
+2023-06-22 02:17:21.285  INFO 31096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 02:17:21.323  INFO 31096 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='LLL', dealTimestamp=null, dealAmount=1}
+2023-06-22 02:17:21.323  INFO 31096 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:17:21.355  WARN 31096 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:17:21.355 ERROR 31096 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:17:21.355  INFO 31096 --- [http-nio-8080-exec-1] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:18:03.264  INFO 31096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 02:18:03.266  INFO 31096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 02:18:17.030  INFO 31277 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 31277 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 02:18:17.031  INFO 31277 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 02:18:17.502  INFO 31277 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 02:18:17.502  INFO 31277 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 02:18:17.522  INFO 31277 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 02:18:17.574  INFO 31277 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 02:18:17.595  INFO 31277 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 02:18:17.661  INFO 31277 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 02:18:17.691  INFO 31277 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 02:18:17.837  INFO 31277 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 02:18:17.844  INFO 31277 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 02:18:18.077  INFO 31277 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 02:18:18.301  INFO 31277 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.458 seconds (JVM running for 1.648)
+2023-06-22 02:19:01.600  INFO 31277 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 02:19:01.650  INFO 31277 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:19:01.651  INFO 31277 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:19:01.688  WARN 31277 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:19:01.688 ERROR 31277 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:19:01.689  INFO 31277 --- [http-nio-8080-exec-1] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:22:19.523  INFO 31277 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 02:22:19.527  INFO 31277 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 02:22:25.037  INFO 31976 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 31976 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 02:22:25.037  INFO 31976 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 02:22:25.481  INFO 31976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 02:22:25.481  INFO 31976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 02:22:25.501  INFO 31976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 02:22:25.553  INFO 31976 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 02:22:25.569  INFO 31976 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 02:22:25.615  INFO 31976 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 02:22:25.643  INFO 31976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 02:22:25.791  INFO 31976 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 02:22:25.797  INFO 31976 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 02:22:25.987  INFO 31976 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 02:22:26.209  INFO 31976 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.299 seconds (JVM running for 1.445)
+2023-06-22 02:22:41.038  INFO 31976 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 02:22:46.608  INFO 31976 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='343', dealTimestamp=null, dealAmount=null}
+2023-06-22 02:22:46.608  INFO 31976 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:22:46.645  WARN 31976 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:22:46.645 ERROR 31976 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:22:46.646  INFO 31976 --- [http-nio-8080-exec-2] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:22:46.649 ERROR 31976 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_othdt4spc6xqphxbq9tvx9ib4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:22:55.130  INFO 31976 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='KKK', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:22:55.131  INFO 31976 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:22:55.142  WARN 31976 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:22:55.142 ERROR 31976 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_cg6jp5oispb85boewyj2k7e4k'
+2023-06-22 02:22:55.143  INFO 31976 --- [http-nio-8080-exec-3] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:22:55.145 ERROR 31976 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_cg6jp5oispb85boewyj2k7e4k]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:26:28.877  INFO 31976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 02:26:28.881  INFO 31976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 02:27:16.507  INFO 32832 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 32832 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 02:27:16.507  INFO 32832 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 02:27:16.992  INFO 32832 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 02:27:16.992  INFO 32832 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 02:27:17.013  INFO 32832 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 02:27:17.063  INFO 32832 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 02:27:17.084  INFO 32832 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 02:27:17.139  INFO 32832 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 02:27:17.168  INFO 32832 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 02:27:17.333  INFO 32832 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 02:27:17.340  INFO 32832 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 02:27:17.546  INFO 32832 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 02:27:17.767  INFO 32832 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.384 seconds (JVM running for 1.536)
+2023-06-22 02:27:25.074  INFO 32832 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 02:27:25.115  INFO 32832 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='KKK', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:27:25.115  INFO 32832 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:27:25.149  WARN 32832 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:27:25.150 ERROR 32832 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_cg6jp5oispb85boewyj2k7e4k'
+2023-06-22 02:27:25.150  INFO 32832 --- [http-nio-8080-exec-1] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:27:25.153 ERROR 32832 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_cg6jp5oispb85boewyj2k7e4k]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:27:25.384  INFO 32832 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='KKK', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:27:25.384  INFO 32832 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:27:25.388  WARN 32832 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:27:25.388 ERROR 32832 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_cg6jp5oispb85boewyj2k7e4k'
+2023-06-22 02:27:25.389  INFO 32832 --- [http-nio-8080-exec-2] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:27:25.389 ERROR 32832 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_cg6jp5oispb85boewyj2k7e4k]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:27:25.551  INFO 32832 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='KKK', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:27:25.552  INFO 32832 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:27:25.561  WARN 32832 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:27:25.561 ERROR 32832 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_cg6jp5oispb85boewyj2k7e4k'
+2023-06-22 02:27:25.561  INFO 32832 --- [http-nio-8080-exec-3] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:27:25.563 ERROR 32832 --- [http-nio-8080-exec-3] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_cg6jp5oispb85boewyj2k7e4k]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:27:25.733  INFO 32832 --- [http-nio-8080-exec-4] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='KKK', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:27:25.734  INFO 32832 --- [http-nio-8080-exec-4] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:27:25.743  WARN 32832 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:27:25.744 ERROR 32832 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_cg6jp5oispb85boewyj2k7e4k'
+2023-06-22 02:27:25.744  INFO 32832 --- [http-nio-8080-exec-4] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:27:25.746 ERROR 32832 --- [http-nio-8080-exec-4] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_cg6jp5oispb85boewyj2k7e4k]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:27:25.904  INFO 32832 --- [http-nio-8080-exec-5] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='KKK', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:27:25.904  INFO 32832 --- [http-nio-8080-exec-5] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:27:25.913  WARN 32832 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:27:25.914 ERROR 32832 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_cg6jp5oispb85boewyj2k7e4k'
+2023-06-22 02:27:25.914  INFO 32832 --- [http-nio-8080-exec-5] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:27:25.916 ERROR 32832 --- [http-nio-8080-exec-5] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_cg6jp5oispb85boewyj2k7e4k]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:27:31.285  INFO 32832 --- [http-nio-8080-exec-6] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:27:31.285  INFO 32832 --- [http-nio-8080-exec-6] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:27:31.297  WARN 32832 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:27:31.297 ERROR 32832 --- [http-nio-8080-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:27:31.297  INFO 32832 --- [http-nio-8080-exec-6] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:27:31.299 ERROR 32832 --- [http-nio-8080-exec-6] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_othdt4spc6xqphxbq9tvx9ib4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:28:07.710  INFO 32832 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 02:28:07.713  INFO 32832 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 02:28:12.961  INFO 33009 --- [restartedMain] com.af.demo.DemoApplication              : Starting DemoApplication using Java 20.0.1 on Macs-Air with PID 33009 (/Users/mac/Desktop/Spring boot Projects/fx-deals-spring/target/classes started by mac in /Users/mac/Desktop/Spring boot Projects/fx-deals-spring)
+2023-06-22 02:28:12.962  INFO 33009 --- [restartedMain] com.af.demo.DemoApplication              : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 02:28:13.392  INFO 33009 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-22 02:28:13.393  INFO 33009 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-06-22 02:28:13.413  INFO 33009 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-22 02:28:13.463  INFO 33009 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 02:28:13.479  INFO 33009 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 02:28:13.525  INFO 33009 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 02:28:13.552  INFO 33009 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 02:28:13.686  INFO 33009 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 02:28:13.692  INFO 33009 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 02:28:13.879  INFO 33009 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 02:28:14.092  INFO 33009 --- [restartedMain] com.af.demo.DemoApplication              : Started DemoApplication in 1.253 seconds (JVM running for 1.393)
+2023-06-22 02:28:20.058  INFO 33009 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-22 02:28:20.095  INFO 33009 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:28:20.095  INFO 33009 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:28:20.125  WARN 33009 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:28:20.126 ERROR 33009 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:28:20.126  INFO 33009 --- [http-nio-8080-exec-1] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:28:20.128 ERROR 33009 --- [http-nio-8080-exec-1] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_othdt4spc6xqphxbq9tvx9ib4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:28:24.703  INFO 33009 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [RequestBody] : DealsRequest{id=null, dealUniqueId='null', fromCurrency='PPP', toCurrencyISOCode='PPP', dealTimestamp=null, dealAmount=34}
+2023-06-22 02:28:24.704  INFO 33009 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [Start Insert Deal]
+2023-06-22 02:28:24.715  WARN 33009 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2023-06-22 02:28:24.715 ERROR 33009 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry 'PPP' for key 'UK_othdt4spc6xqphxbq9tvx9ib4'
+2023-06-22 02:28:24.715  INFO 33009 --- [http-nio-8080-exec-2] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
+2023-06-22 02:28:24.717 ERROR 33009 --- [http-nio-8080-exec-2] com.af.demo.DemoApplication              : [SaveDealException] could not execute statement; SQL [n/a]; constraint [UK_othdt4spc6xqphxbq9tvx9ib4]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2023-06-22 02:28:31.490  INFO 33009 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 02:28:31.493  INFO 33009 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

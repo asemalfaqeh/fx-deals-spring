@@ -5,13 +5,15 @@ import com.af.demo.repositories.DealsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.SQLException;
+
 @Service
 public class DealsService {
 
     @Autowired
     private DealsRepository dealsRepository;
 
-    public void saveDeal(DealsEntity dealsEntity){
+    public void saveDeal(DealsEntity dealsEntity) {
         dealsRepository.save(dealsEntity);
     }
 
