@@ -19,7 +19,7 @@ public class GeneralExceptionHandler {
     public ModelAndView handleDataIntegrityViolation(Exception ex) {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("errors", ex.getMessage());
-        modelAndView.setViewName("dealssss");
+        modelAndView.setViewName("deals");
         return modelAndView;
     }
 

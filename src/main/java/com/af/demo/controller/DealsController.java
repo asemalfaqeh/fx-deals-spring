@@ -13,6 +13,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -26,7 +27,6 @@ import java.util.Set;
 @Controller
 public class DealsController {
     private static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
-    private final Set<String> processedRequests = new HashSet<>();
 
     @Autowired
     private DealsService dealsService;
@@ -41,25 +41,15 @@ public class DealsController {
     @RequestMapping(value = "/save-deal", method = RequestMethod.POST)
     public ModelAndView saveDealController(@Validated DealsRequest dealsRequest, BindingResult bindingResult) {
 
-        String generateId = generateUniqueId.generateUniqueID(30);
         final ModelAndView modelAndView = new ModelAndView();
-        logger.info("[RequestBody] : " + dealsRequest);
 
-        if (processedRequests.contains(generateId)) {
-            logger.error("[Duplicate Request]");
-            modelAndView.addObject("errors", "duplicate request");
-            modelAndView.setViewName("deals");
-            return modelAndView;
-        }
-
-        processedRequests.add(generateId);
         logger.info("[Start Insert Deal]");
 
         try {
 
             DealsEntity dealsEntity = new DealsEntity();
             BeanUtils.copyProperties(dealsRequest, dealsEntity);
-            dealsEntity.setDealUniqueId(generateId);
+            dealsEntity.setDealUniqueId(generateUniqueId.generateUniqueID(30));
             dealsEntity.setDealTimestamp(LocalDateTime.now());
             dealsService.saveDeal(dealsEntity);
 
@@ -67,12 +57,12 @@ public class DealsController {
 
             if (bindingResult.hasErrors()) {
                 modelAndView.addObject("errors", bindingResult.getAllErrors());
-                logger.error("[SaveDeal] "+bindingResult.getAllErrors());
+                logger.error("[SaveDealErrors] "+ bindingResult.getAllErrors());
             }
 
-        }catch (Exception e){
+        }catch (DataIntegrityViolationException e){
+            bindingResult.addError(new ObjectError("errors","deal already exists"));
             modelAndView.addObject("errors", bindingResult.getAllErrors());
-            logger.error("[SaveDealException] " + e.getMessage());
         }
 
         modelAndView.setViewName("deals");
