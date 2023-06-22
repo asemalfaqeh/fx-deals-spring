@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
+import javax.validation.constraints.Null;
 import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
@@ -45,6 +46,13 @@ public class DealsController {
 
         logger.info("[Start Insert Deal]");
 
+        if(dealsService.existsRecord(dealsRequest) != null){
+            bindingResult.addError(new ObjectError("errors","deal already exists"));
+            modelAndView.setViewName("deals");
+            modelAndView.addObject("errors", bindingResult.getAllErrors());
+            return modelAndView;
+        }
+
         try {
 
             DealsEntity dealsEntity = new DealsEntity();
@@ -61,7 +69,7 @@ public class DealsController {
             }
 
         }catch (DataIntegrityViolationException e){
-            bindingResult.addError(new ObjectError("errors","deal already exists"));
+            bindingResult.addError(new ObjectError("errors","exception deal already exists"));
             modelAndView.addObject("errors", bindingResult.getAllErrors());
         }
 

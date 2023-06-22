@@ -2,27 +2,31 @@ package com.af.demo.entities;
 
 
 
+import org.springframework.lang.Nullable;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Date;
 
-@Entity(name = "deals")
+@Entity
+@Table(name = "deals")
 public class DealsEntity implements Serializable {
 
     @Id
     @GeneratedValue
     private Long id;
-    @Column(unique = true)
+    @Column(unique = true,nullable = false)
     private String dealUniqueId;
-    @Column(unique = true)
+    @Column(nullable = false)
     private String fromCurrency;
-    @Column(unique = true)
+    @Column(nullable = false)
     private String toCurrencyISOCode;
-    @Column(unique = true)
+    @Column(nullable = false)
     private LocalDateTime dealTimestamp;
-    @Column(unique = true)
+    @Column(nullable = false)
     private BigDecimal dealAmount;
 
     public DealsEntity(){}
