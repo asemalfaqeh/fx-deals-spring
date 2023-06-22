@@ -1,9 +1,11 @@
 package com.af.demo;
 
 import com.af.demo.entities.DealsEntity;
+import com.af.demo.model.request.DealsRequest;
 import com.af.demo.repositories.DealsRepository;
 import com.af.demo.service.DealsService;
 import com.af.demo.utils.IGenerateUniqueId;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -46,5 +48,13 @@ public class DealsServiceTest {
         Mockito.when(dealsRepository.save(dealsEntity)).thenReturn(dealsEntity);
     }
 
+    @Test
+    final void testDealsExists(){
+        DealsRequest dealsRequest = new DealsRequest();
+        dealsRequest.setDealAmount(BigDecimal.valueOf(123.00));
+        dealsRequest.setFromCurrency("SSA");
+        dealsRequest.setToCurrencyISOCode("USD");
+        Mockito.when(dealsService.existsRecord(dealsRequest)).thenReturn(null);
+    }
 
 }

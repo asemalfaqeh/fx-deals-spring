@@ -7537,3 +7537,15 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [save-
 2023-06-22 14:18:09.498  INFO 25540 --- [http-nio-8080-exec-6] o.h.e.j.b.internal.AbstractBatchImpl     : HHH000010: On release of batch it still contained JDBC statements
 2023-06-22 14:18:18.669  INFO 25540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-06-22 14:18:18.681  INFO 25540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-06-22 14:22:38.205  INFO 22860 --- [main] com.af.demo.DealsServiceTest             : Starting DealsServiceTest using Java 11.0.10 on DESKTOP-GROGP61 with PID 22860 (started by PITS-TRACK in C:\Users\PITS-TRACK\Desktop\AF\fx-deals-spring)
+2023-06-22 14:22:38.208  INFO 22860 --- [main] com.af.demo.DealsServiceTest             : No active profile set, falling back to 1 default profile: "default"
+2023-06-22 14:22:40.430  INFO 22860 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-22 14:22:40.528  INFO 22860 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-06-22 14:22:40.772  INFO 22860 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-22 14:22:41.178  INFO 22860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-06-22 14:22:41.467  INFO 22860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-22 14:22:41.484  INFO 22860 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-06-22 14:22:42.286  INFO 22860 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-22 14:22:44.033  INFO 22860 --- [main] com.af.demo.DealsServiceTest             : Started DealsServiceTest in 6.344 seconds (JVM running for 8.069)
+2023-06-22 14:22:44.458  INFO 22860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-22 14:22:44.481  INFO 22860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
